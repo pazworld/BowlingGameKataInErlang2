@@ -4,9 +4,13 @@
 % All rolls are processed
 score([]) -> 0;
 
+% Strike
+score([10, NextRoll1, NextRoll2 | Rest]) ->
+    10 + NextRoll1 + NextRoll2 + score([NextRoll1, NextRoll2 | Rest]);
+
 % Spare
 score([Roll1, Roll2, NextRoll1 | Rest]) when Roll1 + Roll2 =:= 10 ->
     10 + NextRoll1 + score([NextRoll1 | Rest]);
 
-% Not Spare
+% Not strike nor spare
 score([Roll1, Roll2 | Rest]) -> Roll1 + Roll2 + score(Rest).
