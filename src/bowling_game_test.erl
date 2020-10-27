@@ -12,3 +12,7 @@ all_ones_test() ->
 one_spare_test() ->
     Rolls = [5, 5, 3] ++ lists:duplicate(17, 0),
     ?assertEqual(16, bowling_game:score(Rolls)).
+
+one_strike_test() ->
+    Rolls = [10, 3, 4] ++ lists:duplicate(16, 0),
+    ?assertEqual(24, bowling_game:score(Rolls)).
