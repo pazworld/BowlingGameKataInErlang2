@@ -8,6 +8,7 @@
 
 1. [Bowling Kata In Erlang 1](https://github.com/pazworld/BowlingGameKataInErlang1) - It follows the Kata
 2. Bowling Kata In Erlang 2 (this repository) - Kata with more functional style
+3. [Bowling Kata In Erlang 3](https://github.com/pazworld/BowlingGameKataInErlang3) - Kata with more messaging style
 
 This project uses Rebar3 and Eunit.
 
